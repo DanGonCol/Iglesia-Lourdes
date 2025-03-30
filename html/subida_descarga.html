@@ -3,14 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Lateral</title>
+    <title>Subida y Descarga de Documentos</title>
     <link rel="stylesheet" href="/css/styles_base.css">
     <script defer src="/jss/script_base.js"></script>
 </head>
 <header class="main-title">
-    <h1>Basilica de Lourdes.</h1>
+    
   </header>
-    <body>
+  <body>
+    <header class="main-title">
+        <h2>Basilica de Lourdes.</h2>
+        <h4>Subida y Descarga de Documentos</h4>
+    </header>
+    
+    <div class="form-container">
+        <section class="form-upload">
+            <h4>Subir Documento</h4>
+            <form action="subir_documento.php" method="POST" enctype="multipart/form-data">
+                <label for="file">Seleccionar archivo (PDF):</label>
+                <input type="file" id="file" name="file" accept=".pdf" class="controls" required>
+                <button type="submit" class="botons">Subir</button>
+            </form>
+        </section>
+
+        <section class="form-download">
+            <h4>Descargar Documentos</h4>
+            <ul class="document-list">
+                <li><a href="../docs/certificado_bautismo.pdf" download>Certificado de Bautismo</a></li>
+                <li><a href="../docs/solicitud_matrimonio.pdf" download>Solicitud de Matrimonio</a></li>
+                <li><a href="../docs/constancia_voluntariado.pdf" download>Constancia de Voluntariado</a></li>
+            </ul>
+        </section>
+    </div>
+</body>  
+  
+  <body>
         <div class="menu-toggle" id="menuToggle">
             ☰
         </div>
@@ -20,7 +47,6 @@
                 <li><a href="/html/gestion_contenido.html">RF001 - Gestión de Contenido</a></li>
                 <li><a href="/html/subida_descarga.html">RF002 - Subida y Descarga de Documentos</a></li>
                 <li><a href="/html/agendamiento_misas.html">RF003 - Agendamiento de Misas</a></li>
-                <li><a href="/html/usabilidad_accesibilidad.html">RF004 - Usabilidad y Accesibilidad</a></li>
                 <li><a href="/html/donaciones.html">RF005 - Realización de Donaciones en Línea</a></li>
                 <li><a href="/html/reserva_espacios.html">RF006 - Reserva de Espacios para Adoración</a></li>
                 <li><a href="/html/citas_apoyo.html">RF007 - Agendamiento de Citas para Apoyo Espiritual</a></li>

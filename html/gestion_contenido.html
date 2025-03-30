@@ -3,13 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Lateral</title>
+    <title>Gestion de Contenido</title>
     <link rel="stylesheet" href="/css/styles_base.css">
     <script defer src="/jss/script_base.js"></script>
 </head>
 <header class="main-title">
-    <h1>Basilica de Lourdes.</h1>
+    <h2>Basilica de Lourdes.</h2>
+    <h4>Gestión de Contenido</h4>
   </header>
+        
+        <div class="form-container">
+            <section class="form-login">
+                <h4>Publicar Nuevo Contenido</h4>
+                <input type="text" class="controls" id="titulo" placeholder="Título" required>
+                <textarea class="controls" id="descripcion" placeholder="Descripción" required></textarea>
+                <select class="controls" id="categoria">
+                    <option value="">Seleccione la categoría</option>
+                    <option value="noticia">Noticia</option>
+                    <option value="evento">Evento</option>
+                    <option value="aviso">Aviso</option>
+                </select>
+                <input type="date" class="controls" id="fechaInicio" required>
+                <input type="date" class="controls" id="fechaFin" required>
+                <button class="botons" type="button" onclick="publicarContenido()">Publicar</button>
+            </section>
+        </div>
+
+        <div class="form-container">
+            <section class="form-login">
+                <h4>Publicaciones Activas</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Categoría</th>
+                            <th>Fecha Inicio</th>
+                            <th>Fecha Fin</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaPublicaciones">
+                        <!-- Aquí se listarán las publicaciones -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
     <body>
         <div class="menu-toggle" id="menuToggle">
             ☰
@@ -20,7 +58,6 @@
                 <li><a href="/html/gestion_contenido.html">RF001 - Gestión de Contenido</a></li>
                 <li><a href="/html/subida_descarga.html">RF002 - Subida y Descarga de Documentos</a></li>
                 <li><a href="/html/agendamiento_misas.html">RF003 - Agendamiento de Misas</a></li>
-                <li><a href="/html/usabilidad_accesibilidad.html">RF004 - Usabilidad y Accesibilidad</a></li>
                 <li><a href="/html/donaciones.html">RF005 - Realización de Donaciones en Línea</a></li>
                 <li><a href="/html/reserva_espacios.html">RF006 - Reserva de Espacios para Adoración</a></li>
                 <li><a href="/html/citas_apoyo.html">RF007 - Agendamiento de Citas para Apoyo Espiritual</a></li>
