@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Lateral</title>
+    <link rel="stylesheet" href="/css/styles_base.css">
+    <script defer src="/jss/script_base.js"></script>
+</head>
+<body>
+    <header class="main-title">
+        <h1>Basilica de Lourdes</h1>
+    </header>
+    
+    <div class="form-container">
+        <section class="form-login">
+            <h4>Seleccione su Tipo de Usuario</h4>
+            <select class="controls" name="tipo_cuenta" id="tipo_cuenta">
+                <option value="">Seleccione el tipo de cuenta</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <div class="button-group-bottom">
+                <button class="botons" type="button" onclick="handleRedirections()">Registrar</button>
+            </div>
+            <p class="create-account-text">¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+        </section>
+    </div>
+
+    <div class="menu-toggle" id="menuToggle">
+        ☰
+    </div>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="/html/menu_navegacion.html">Menu Principal</a></li>
+            <li><a href="/html/gestion_contenido.html">RF001 - Gestión de Contenido</a></li>
+            <li><a href="/html/subida_descarga.html">RF002 - Subida y Descarga de Documentos</a></li>
+            <li><a href="/html/agendamiento_misas.html">RF003 - Agendamiento de Misas</a></li>
+            <li><a href="/html/usabilidad_accesibilidad.html">RF004 - Usabilidad y Accesibilidad</a></li>
+            <li><a href="/html/donaciones.html">RF005 - Realización de Donaciones en Línea</a></li>
+            <li><a href="/html/reserva_espacios.html">RF006 - Reserva de Espacios para Adoración</a></li>
+            <li><a href="/html/citas_apoyo.html">RF007 - Agendamiento de Citas para Apoyo Espiritual</a></li>
+            <li><a href="/html/gestion_sacramentos.html">RF008 - Registro y Gestión de Sacramentos</a></li>
+            <li><a href="/html/educacion_religiosa.html">RF009 - Gestión de Programas de Educación Religiosa</a></li>
+            <li><a href="/html/actividades_eventos.html">RF0010 - Consultas sobre Actividades y Eventos</a></li>
+            <li><a href="/html/recursos_espirituales.html">RF0011 - Acceso a Recursos Espirituales</a></li>
+            <li><a href="/html/gestion_voluntarios.html">RF0012 - Gestión de Voluntarios</a></li>
+            <li><a href="/html/cambiar_usuario.html">Cambiar de Rol</a></li>
+        </ul>
+    </div>
+</body>
+</html>

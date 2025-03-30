@@ -1,0 +1,194 @@
+/* Botón de menú */
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Barra lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #222;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    padding-top: 50px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cuando el menú está abierto */
+.sidebar.open {
+    width: 250px;
+}
+
+/* Estilos de los enlaces */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background: #444;
+}
+
+/* Estilo para la opción de cambiar de rol */
+.change-role {
+    text-align: center;
+    padding: 15px 0;
+    background: #333;
+}
+
+.change-role a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+.change-role a:hover {
+    background: #444;
+}
+
+/* Fondo del cuerpo */
+body {
+    background: linear-gradient(to bottom, #0c2e45, #144d68, #1e6b8f);
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos del título */
+.main-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Títulos dentro del formulario */
+.form-login h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Inputs y select */
+.controls {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #1f53c5;
+    border-radius: 5px;
+    background-color: #24303c;
+    color: white;
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.controls:focus {
+    border-color: #3a6df0;
+    background-color: #1a5578;
+}
+
+.controls::placeholder {
+    color: #b8d8e4;
+    opacity: 0.8;
+}
+
+.controls:focus::placeholder {
+    opacity: 0.5;
+}
+
+select.controls {
+    cursor: pointer;
+}
+
+/* Botón */
+.button-group-bottom .botons {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f53c5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-group-bottom .botons:hover {
+    background-color: #3a6df0;
+}
+
+/* Texto inferior */
+.create-account-text {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.create-account-text a {
+    color: #3a6df0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-account-text a:hover {
+    text-decoration: underline;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
